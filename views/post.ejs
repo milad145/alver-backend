@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="آلور،اپلیکیشن،نرم افزار،دانلود">
+    <meta name="author" content="alver group">
+    <meta name="generator" content="html5">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="<%= post.description || '' %>">
+    <meta property="og:title" content="<%= post.title %>"/>
+    <meta property="og:url" content="https://alver.com/p/<%= post._id %>/<%= post.title.replace(/ /g, '_') %>"/>
+    <meta property="og:description" content="<%= post.description || '' %>">
+    <meta property="og:image" content="<%= post.mainImage ? '/appImage/' + post.mainImage : '/image/logo.png' %>">
+    <meta property="al:ios:url"
+          content="alver://alver.com/p/<%= post._id %>/<%= post.title.replace(/ /g, '_') %>"/>
+    <meta property="al:ios:app_name" content="آلور"/>
+    <meta property="al:android:url"
+          content="alver://alver.com/p/<%= post._id %>/<%= post.title.replace(/ /g, '_') %>"/>
+    <meta property="al:android:app_name" content="آلور"/>
+    <meta property="al:android:package" content="com.alver"/>
+    <meta property="al:web:url" content="https://alver.com"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/style/libs/Bootstrap-min-v4.0.0.css">
+    <link rel="stylesheet" href="/style/libs/Bootstrap-min-v3.3.7.css">
+    <link rel="stylesheet" href="/style/libs/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/style/font.css">
+    <link rel="stylesheet" href="/style/style.css?v=1klasfas56d4f">
+
+    <script src="/js/libs/jquery-slim.min.js"></script>
+    <script src="/js/libs/popper.min.js"></script>
+    <script src="/js/libs/jquery-3.2.1.min.js"></script>
+    <script src="/js/libs/Bootstrap-min-v4.0.0.js"></script>
+    <script src="/js/libs/Bootstrap-min-v3.3.7.js"></script>
+    <script src="/js/libs/moment.min.js"></script>
+    <script src="/js/script.js"></script>
+
+    <title>اپلیکیشن آلور</title>
+    <!---start GOFTINO code--->
+    <script type="text/javascript">
+        !function () {
+            var a = window, d = document;
+
+            function g() {
+                var g = d.createElement("script"), s = "https://www.goftino.com/widget/8pZsyw",
+                    l = localStorage.getItem("goftino");
+                g.type = "text/javascript", g.async = !0, g.src = l ? s + "?o=" + l : s;
+                d.getElementsByTagName("head")[0].appendChild(g);
+            }
+
+            "complete" === d.readyState ? g() : a.attachEvent ? a.attachEvent("onload", g) : a.addEventListener("load", g, !1);
+        }();
+    </script>
+    <!---end GOFTINO code--->
+</head>
+<body>
+<input type="text" hidden id="postValue" value="<%= JSON.stringify(post) %>"/>
+<!-----------header-------------->
+<header>
+    <div class="header-caption h-25">
+        <div class="container-fluid xxl-max-width px-5">
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <a href="https://alver.com"><h1 class="text-right m-0 logo">
+                    </h1></a>
+                    <span class="sub-title-lg">شبکه ارتباطی داد و ستد تمام روستائیان کشور</span>
+                    <p class="sub-title-sm text-center">شبکه ارتباطی داد و ستد تمام روستائیان کشور</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--------slider--------->
+<section class="slider">
+    <div class="container-fluid xxl-max-width">
+        <div class="row">
+            <div class="col-xxl-10 col-xl-9 col-lg-8 col-md-6 col-sm-12 order-xxl-0 order-xl-0 order-lg-0 order-md-0 order-sm-2 order-xs-2">
+                <div class="back-mirror my-4 mx-auto p-5 w-75">
+                    <div class="comment-app text-center">
+                        <h2 class="text-right pr-3 my-5 text-right">جهت دسترسی به محتویات آگهی</h2>
+                        <p class="text-right pr-4 py-2 text-right">
+                            اپلیکیشن آلور رو از گوگل پلی دانلود کنید و یا به صورت مستقیم از لینک زیر دریافت کنید.
+                        </p>
+                        <div class="box-download mx-auto my-5">
+                            <div class="row">
+                                <a href="https://play.google.com/store/apps/details?id=com.alver"
+                                   class="link-alver-google" target="_blank"></a>
+<!--                                <a href="#" class="mx-4 bg-primary link-alver-direct"><i-->
+<!--                                        class="fa fa-download fa-2x px-3 my-3" aria-hidden="true"></i>دانلود با لینک-->
+<!--                                    مستقیم</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 handshake-smartphone order-xxl-0 order-xl-0 order-lg-0 order-md-0 order-sm-1 order-xs-1">
+                <div class="left-side-advertize">
+                    <div class="content">
+                        <div class="block-smart-phone px-2">
+                            <!-----------------start-section-into-html-link--------------->
+                            <div class="img-advertize pt-3 rounded m-auto text-center">
+                                <img src="/appImage/<%= post.mainImage %>"
+                                     onerror="this.onerror=null;this.src='/image/logo.png';"/>
+                            </div>
+                            <div class="title-advertize text-right">
+                                <h1><%= post.title %></h1>
+                                <span class="sub_title">
+                                <span id="postTime"></span>
+                                    در
+                                    <span>
+                                        <%= post.city.label %>
+                                    </span>
+                                </span>
+                                <div class="price">
+                                    <span class="float-right p-0">قیمت </span>
+                                    <span class="float-left p-0" id="priceValue">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="description-advertize">
+                                <h2 class="text-right my-0 m-auto">توضیحات</h2>
+                                <p class="text-justify">
+                                    <%= post.description %>
+                                </p>
+                            </div>
+                            <!-----------------------End-section-into-html-link------------------->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

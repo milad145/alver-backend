@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404</title>
+    <link rel="stylesheet" href="/style/error.css" media="screen">
+    <script class="u-script" type="text/javascript" src="/js/libs/jquery-1.9.1.min.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/js/error.js" defer=""></script>
+    <%
+    let errorCode = 404
+    let errorMessage = "آگهی مورد نظر یافت نشد. این آگهی ممکن است حذف یا منقضی شده باشد."
+    %>
+</head>
+<body>
+<div class="page">
+    <div class="content">
+        <div>
+            <h1><%= errorCode %></h1>
+            <h2><%= errorMessage %></h2>
+            <p></p>
+            <a href="/">بازگشت</a>
+        </div>
+    </div>
+    <div class="img" src="/image/background.jpg"></div>
+</div>
+
+</body>
+</html>

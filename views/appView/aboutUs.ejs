@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
+
+    <title>درباره ما</title>
+
+    <link rel="stylesheet" href="/style/libs/Bootstrap-min-v4.0.0.css">
+    <link rel="stylesheet" href="/style/libs/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/style/libs/icons.css">
+    <link rel="stylesheet" href="/style/font.css">
+    <link rel="stylesheet" href="/style/appView.css">
+
+</head>
+<body>
+<div class="aboutUs">
+    <p>
+        با ظهور بازار های اینترنتی، هر روستایی در هر کجای سرزمین مان نیز نیازمند بسترهای های داد و ستد کارآمد می باشد.
+        به طوری که غالبا درآمد هر روستایی وابسته به فروش محصولات زراعی و باغی و فرآورده های دامی، طیور و شیلات می باشد.
+        از این رو، دغدغه روستائیان که به بازار های فروش آنلاین دسترسی محدود و یا اصلا ندارند، اصلی ترین هدف مجموعه
+        آلور برای معرفی رسالت خود جهت تسهیل دسترسی تمام روستائیان عزیز کشورمان به یک پلتفرم خرید و فروش کارا و خدمات
+        محور می باشد.
+    </p>
+    <p>­از آنجایی که بنیان گزاران این مجموعه خودشان روستایی بوده اند و هستند و با تمام محدودیت ها و مشکلات زندگی روستایی
+        مواجه بوده اند به همین جهت، بعد از برآورد های میدانی از نیازمندی های روستائیان در خصوص خرید و فروش در حوزه
+        کشاورزی، دام، طیور و شیلات، برآن شدیم تا یک بستر نوین بر مبنای ثبت آگهی رایگان مادالمعمر برای روستائیان در جهت
+        خرید و فروش های آنلاین طراحی به شیوه ای متفاوت جهت خدمات رسانی به کلیه روستائیان کشور راه اندازی شده است.</p>
+    <p>در راستای رسالت های هدف گذاری شده، این مجموعه با در نظر گرفتن کلیه ظرفیت های قابل خرید و فروش بر بستر بازارهای
+        آنلاین در حوزه های عنوان شده همسو با دیگر مجموعه های فعال، فعالیت همه جانبه ی خود را شروع کرده است و علاوه بر
+        این، فضایی کاملا متناسب با نیازمندی های گروه های هدف ما (روستائیان)راه اندازی و عملیاتی شده است</p>
+    <p class="mb-0">راه‌های ارتباط با آلور</p>
+    <p class="socialGroup">
+        <a href="https://www.instagram.com/alver.com" target="_blank">
+            <i class="scl-btn scl-crcl shadow fab fa-instagram"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=<%= typeof phoneNumber !== "undefined" ? phoneNumber : '' %>"
+           target="_blank"
+           class="scl-btn scl-crcl shadow fab fa-whatsapp"></a>
+        <a href="mailto:alverapp@gmail.com"
+           target="_blank"
+           class="scl-btn scl-crcl shadow fab fa-google"></a>
+        <% if(typeof chatHome !== "undefined"){ %>
+        <a href="<%= chatHome %>">
+            <i class="free-btn scl-crcl shadow fab fa fa-comments"></i>
+        </a>
+        <% } %>
+    </p>
+</div>
+</body>
+</html>

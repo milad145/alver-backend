@@ -1,0 +1,696 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: yekan;
+}
+
+.bg-dark {
+    background-color: #333;
+}
+
+.text-white {
+    color: #fff;
+}
+
+
+/*---------body----------*/
+body {
+    background-image: url(/image/background-1920pxX1440px.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    color: #000;
+}
+
+
+/*-------topbar-------*/
+/* header .topbar{
+    line-height: 30px;
+} */
+/*-------header-caption---------------*/
+.header-caption .logo {
+    height: 70px;
+    width: 250px;
+    background-image: url(/image/logoalver.svg);
+    background-repeat: no-repeat;
+    background-size: 450px 340px;
+}
+
+header .header-caption {
+    background: rgb(83, 209, 43);
+    background: linear-gradient(90deg, #74d61d 0%, rgba(255, 255, 255, 1) 80%);
+}
+
+.header-caption .sub-title-lg {
+    position: absolute;
+    top: 37px;
+    float: right;
+    right: 180px;
+    font-size: 15px;
+}
+
+.header-caption .sub-title-lg {
+    display: block;
+}
+
+.header-caption .sub-title-sm {
+    display: none !important;
+}
+
+/*----------header-form-----------*/
+.header-caption form {
+    margin: 20px auto;
+}
+
+.header-caption form {
+    width: 300px;
+    float: left;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background-image: linear-gradient(0deg, rgba(246, 246, 246, 1) 0%, rgba(240, 239, 239, 1) 100%);
+    opacity: 0.4;
+    z-index: -1;
+    margin: 26px auto;
+}
+
+.header-caption form input {
+    width: 280px;
+    height: 45px;
+    line-height: 0;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background-image: linear-gradient(0deg, rgba(246, 246, 246, 1) 0%, rgba(240, 239, 239, 1) 100%);
+    padding-right: 10px;
+    color: #000;
+    margin: 0;
+    padding: 0 auto 0 0;
+}
+
+.header-caption form button {
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    left: 25px;
+    top: 27px;
+    color: #000;
+    opacity: 1;
+    z-index: 1;
+}
+
+.header-caption form button:focus {
+    outline: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.header-caption input:focus {
+    outline: 0;
+}
+
+.topbar .size-2x {
+    font-size: 18px;
+}
+
+.back-mirror {
+    background: rgb(246, 246, 246);
+    background: linear-gradient(
+            0deg, rgba(246, 246, 246, 1) -500%, #ffffff3d 100%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.comment-app p {
+    font-size: 23px;
+
+}
+
+/*---------------block-left-side------------*/
+.left-side-advertize {
+    background-image: url(/image/handshake-smartphone-main.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300px 500px;
+    width: 100%;
+    height: 525px;
+    position: relative;
+}
+
+.block-smart-phone {
+    position: absolute;
+    margin: 45px 6.2rem;
+    width: 22rem;
+    height: 450px;
+}
+
+.img-advertize img {
+    height: 15rem;
+    width: 21rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.title-advertize h1 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px auto;
+}
+
+.description-advertize {
+    clear: both;
+    height: 200px;
+}
+
+.description-advertize h2 {
+    font-size: 20px;
+}
+
+.price span {
+    margin: 5px auto;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0px 0 10px 0;
+}
+
+.block-smart-phone p {
+    width: 210px;
+    height: 165px;
+    font-size: 16px;
+}
+
+.block-smart-phone p {
+    min-height: 166px;
+    overflow: hidden;
+    padding-left: 7px;
+    overflow-y: auto;
+}
+
+.block-smart-phone p::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+.block-smart-phone p::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.block-smart-phone p::-webkit-scrollbar-thumb {
+    background: #7be21c;
+}
+
+/* Handle on hover */
+.block-smart-phone p::-webkit-scrollbar-thumb:hover {
+    background: #63b816;
+}
+
+/*---------messenger--------*/
+
+footer .contact img {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+/*----------------------------------------------------------------@media-screen----------------------------------------------------------*/
+
+@media screen and (max-width: 2660px) {
+    /* header .topbar{
+        font-size: 2rem;
+    } */
+    .header-caption .sub-title-lg {
+        top: 3rem;
+        font-size: 2.4rem;
+    }
+
+    .header-caption form {
+        margin: 26px auto !important;
+    }
+
+    .header-caption form button {
+        top: 36px !important;
+    }
+
+    .back-mirror {
+        width: 100% !important;
+    }
+
+    .comment-app h2 {
+        font-size: 7rem !important;
+    }
+
+    .comment-app p {
+        font-size: 4rem !important;
+    }
+
+    a.link-alver-google {
+        background-image: url(/image/link-alver-google.png);
+    }
+
+    a.link-alver-google, a.link-alver-direct {
+        width: 250px;
+        height: 75px;
+        border-radius: 10px;
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .block-smart-phone {
+        margin: 45px 19.6rem;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .block-smart-phone {
+        margin: 45px 11.7rem;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    /* header .topbar{
+        font-size: 1.4rem!important;
+    } */
+    .header-caption .sub-title-lg {
+        top: 3rem;
+        font-size: 1.9rem !important;
+    }
+
+    /*-------back-mirror--------*/
+    .back-mirror {
+        width: 100% !important;
+    }
+
+    .comment-app h2 {
+        font-size: 4rem !important;
+    }
+
+    .comment-app p {
+        font-size: 2.5rem !important;
+    }
+
+    a.link-app-alver img {
+        width: 400px;
+        height: 150px;
+        margin-top: 50px;
+    }
+
+    .block-smart-phone {
+        margin: 45px 5.6rem;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .block-smart-phone {
+        margin: 45px 4.7rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header-caption .sub-title-lg {
+        top: 3rem;
+        font-size: 3rem;
+    }
+
+    /*-------topbar-------*/
+    /* header .topbar{
+        font-size: 1.4rem;
+    } */
+    /*-------back-mirror--------*/
+    .back-mirror {
+        width: 100% !important;
+    }
+
+    .comment-app h2 {
+        font-size: 4rem !important;
+    }
+
+    .comment-app p {
+        font-size: 1.7rem !important;
+    }
+
+    a.link-alver-google, a.link-alver-direct {
+        margin: 10px auto !important;
+    }
+
+    .block-smart-phone {
+        margin: 45px 4.6rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    /*-------topbar-------*/
+    /* header .topbar{
+        font-size: 1rem;
+    } */
+    /*-------header-caption---------------*/
+    .header-caption .sub-title-lg {
+        position: absolute;
+        top: 4rem;
+        float: right;
+        right: 18rem;
+        font-size: 1.2rem !important;
+        display: block !important;
+    }
+
+    .header-caption .sub-title-sm {
+        display: none !important;
+    }
+
+    .comment-app h2 {
+        font-size: 2.6rem !important;
+    }
+
+    .comment-app p {
+        font-size: 1.6rem !important;
+    }
+
+    a.link-alver-google, a.link-alver-direct {
+        margin: 10px auto !important;
+    }
+
+    .block-smart-phone {
+        margin: 45px 6.8rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    /*-------topbar-------*/
+    /* header .topbar{
+        font-size: 1.6rem!important;
+    } */
+    /*-------header-caption---------------*/
+    .header-caption .logo {
+        height: 70px;
+        width: 325px;
+        background-image: url(/image/logoalver.svg);
+        background-repeat: no-repeat;
+        background-size: 420px 335px;
+        margin: auto !important;
+    }
+
+    header .header-caption {
+        background: rgb(83, 209, 43);
+        background: linear-gradient(0deg, #74d61d 0%, rgba(255, 255, 255, 1) 51%);
+    }
+
+    .header-caption h1 {
+        text-align: center !important;
+    }
+
+    .header-caption .sub-title-lg {
+        display: none !important;
+    }
+
+    .header-caption .sub-title-sm {
+        display: block !important;
+    }
+
+    .header-caption form {
+        width: 100%;
+    }
+
+    .header-caption form input {
+        width: 90%;
+        float: right;
+    }
+
+    .header-caption form button {
+        float: left;
+        width: 50px;
+        left: 15px;
+        top: 67px !important;
+    }
+
+    .back-mirror {
+        width: 100% !important;
+    }
+
+    .comment-app h2 {
+        font-size: 5rem !important;
+    }
+
+    .comment-app p {
+        font-size: 2.8rem !important;
+    }
+
+    a.link-alver-google, a.link-alver-direct {
+        margin: 10px auto !important;
+    }
+
+    .block-smart-phone {
+        margin: 45px 25.9rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header-caption form button {
+        top: 57px !important;
+    }
+
+    .order-xs-1 {
+        order: 1 !important;
+    }
+
+    .order-xs-2 {
+        order: 2 !important;
+    }
+
+    /*-------topbar-------*/
+    /* header .topbar{
+        font-size: 1.5rem;
+    } */
+    header .header-caption h1 {
+        text-align: center !important;
+    }
+
+    .header-caption .sub-title-sm {
+        display: block !important;
+        font-size: 1.6rem;
+    }
+
+    .header-caption .sub-title-lg {
+        display: none !important;
+    }
+
+    .header-caption form {
+        width: 100%;
+    }
+
+    .header-caption form input {
+        width: 100%;
+    }
+
+    .header-caption form button {
+        float: left;
+        width: 50px;
+        height: 50px;
+        left: 15px;
+        top: 50px;
+    }
+
+    .back-mirror {
+        width: 100% !important;
+    }
+
+    .comment-app h2 {
+        font-size: 1.6rem !important;
+    }
+
+    .comment-app p {
+        font-size: 3rem !important;
+        text-align: justify !important;
+    }
+
+    .block-smart-phone {
+        margin: 45px 16.3rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .comment-app h2 {
+        font-size: 4rem !important;
+    }
+
+    .comment-app p {
+        font-size: 2.9rem !important;
+        text-align: justify !important;
+    }
+
+    .block-smart-phone {
+        margin: 45px 14.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .comment-app h2 {
+        font-size: 2.9rem !important;
+    }
+
+    .comment-app p {
+        font-size: 2.9rem !important;
+        text-align: justify !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .comment-app h2 {
+        font-size: 3rem !important;
+    }
+
+    .comment-app p {
+        font-size: 2.8rem !important;
+        text-align: justify !important;
+    }
+
+    .block-smart-phone {
+        margin: 45px 8.8rem;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    .comment-app h2 {
+        font-size: 3rem !important;
+    }
+
+    .comment-app p {
+        font-size: 2.8rem !important;
+        text-align: justify !important;
+    }
+
+    .block-smart-phone {
+        margin: 45px 8.3rem;
+    }
+
+}
+
+@media screen and (max-width: 411px) {
+    .comment-app h2 {
+        font-size: 2.9rem !important;
+    }
+
+    .comment-app p {
+        font-size: 2.6rem !important;
+        text-align: justify !important;
+    }
+
+    .block-smart-phone {
+        margin: 45px 8.1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header-caption .logo {
+        width: 322px;
+    }
+
+    .comment-app h2 {
+        font-size: 2.6rem !important;
+    }
+
+    .comment-app p {
+        font-size: 2.2rem !important;
+        text-align: justify !important;
+    }
+
+    .block-smart-phone {
+        margin: 45px 6.4rem;
+    }
+
+
+}
+
+@media screen and (max-width: 360px) {
+    .header-caption .logo {
+        width: 310px;
+    }
+
+    .comment-app h2 {
+        font-size: 2.4rem !important;
+    }
+
+    .comment-app p {
+        font-size: 2rem !important;
+        text-align: justify !important;
+    }
+
+    .block-smart-phone {
+        margin: 45px 5.6rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header-caption .logo {
+        width: 290px;
+    }
+
+    .order-xs-1 {
+        order: 1 !important;
+    }
+
+    .order-xs-2 {
+        order: 2 !important;
+    }
+
+    .comment-app h2 {
+        font-size: 2rem !important;
+    }
+
+    .comment-app p {
+        font-size: 2rem !important;
+        text-align: justify !important;
+    }
+
+    .block-smart-phone {
+        margin: 45px 3.6rem;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+    .header-caption .logo {
+        width: 248px;
+        background-size: 359px 284px;
+    }
+
+    .order-xs-1 {
+        order: 1 !important;
+    }
+
+    .order-xs-2 {
+        order: 2 !important;
+    }
+
+    .header-caption .sub-title-sm {
+        font-size: 1rem;
+    }
+
+    .header-caption form button {
+        top: 50px !important;
+    }
+
+    .comment-app h2 {
+        font-size: 1.7rem !important;
+    }
+
+    .comment-app p {
+        font-size: 1.5rem !important;
+        text-align: justify !important;
+    }
+
+    .left-side-advertize {
+        background-size: 253px 500px !important;
+    }
+
+    .block-smart-phone {
+        margin: 45px 1.5rem;
+    }
+
+}

@@ -1,0 +1,40 @@
+{
+  "ports": {
+    "app": 3400,
+    "site": 3500
+  },
+  "uploads": {
+    "images": {
+      "maxSize": "50 MB"
+    },
+    "audios": {
+      "maxSize": "10 MB"
+    },
+    "all": {
+      "maxSize": 31457280
+    }
+  },
+  "jwt": {
+    "EXPIRES_IN_SECONDS": 31536000,
+    "ISSUER": "nozus.com",
+    "AUDIENCE": "nozus.com"
+  },
+  "transporter": {
+    "service": "SES-US-EAST-1",
+    "host": "email-smtp.us-east-1.amazonaws.com",
+    "port": 2587
+  },
+  "version": {
+    "lastVersion": "1.0.4",
+    "lastSupportedVersion": "1.0.4"
+  },
+  "queryOptions": {
+    "post": {
+      "limit": 30
+    }
+  },
+  "sms": {
+    "smsText": "آلور\nکد {number} را جهت ورود به سامانه آلور وارد نمایید.\n{smsHash}",
+    "smsCodeLength": 6
+  }
+}

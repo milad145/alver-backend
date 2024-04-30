@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= post.title %></title>
+    <meta name="description" content="<%= post.description || '' %>">
+    <meta property="og:title" content="<%= post.title %>"/>
+    <meta property="og:url" content="https://alver.com/p/<%= post._id %>/<%=post.title.replace(/ /g,'_')%>"/>
+    <meta property="og:description" content="<%= post.description || '' %>">
+    <meta property="og:image" content="/image/<%= post.mainImage %>">
+    <meta property="al:ios:url" content="alver://alver.com/p/<%= post._id %>/<%=post.title.replace(/ /g,'_')%>"/>
+    <meta property="al:ios:app_name" content="آلور"/>
+    <meta property="al:android:url" content="alver://alver.com/p/<%= post._id %>/<%=post.title.replace(/ /g,'_')%>"/>
+    <meta property="al:android:app_name" content="آلور"/>
+    <meta property="al:android:package" content="com.alver"/>
+    <meta property="al:web:url" content="https://alver.com"/>
+    <script>
+        function redirect() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            var ios = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+            if (ios) {
+                window.location = "alver://alver.com/p/<%= post._id %>/<%=post.title.replace(/ /g,'_')%>";
+                return;
+            }
+            var android = /android/i.test(userAgent);
+            if (android) {
+                window.location = "alver://alver.com/p/<%= post._id %>/<%=post.title.replace(/ /g,'_')%>";
+                // window.setTimeout(() => {
+                //     window.location.replace("https://play.google.com/store/apps/details?id=com.alver&hl=fa&gl=US");
+                // }, 25);
+                return;
+            }
+            // window.location.replace("{ELEMENT_OUTSIDE_URL}");
+        }
+
+        // redirect();
+    </script>
+</head>
+<body>
+<h1><%=post.title%></h1>
+<img src="/image/<%=post.mainImage%>"/>
+</body>
+</html>

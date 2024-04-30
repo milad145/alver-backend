@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: yekan !important;
+    direction: rtl;
+}
+
+.aboutUs {
+    text-align: justify;
+    width: 95%;
+    margin: 10px auto;
+}
+
+.aboutUs p {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.aboutUs .socialGroup {
+    text-align: center;
+    margin-bottom: 50px;
+}
